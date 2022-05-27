@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Keycode Generator</title>
+    </head>
+    <body>
+        <header>My Keycode Generator</header>
+        <div class="container">
+            <h2 id="numDisplay" >Press a key activate generator</h2>
+        </div>
+        <div class="container">
+            <div class="key-container">
+                <p id="codeDisplay"></p>
+                <br>
+                <p>event.code</p>
+                <br>
+                <p>The physical key on the keyboard.
+                <p>Doesn't care if you are holding a modifier like Shift</p>
+            </div>
+            <div class="key-container">
+                <p id="keyDisplay"></p>
+                <br>
+                <p>event.key</p>
+            </div>
+            <div class="key-container">
+                <p id="whichDisplay"></p>
+                <br>
+                <p>event.which</p>
+                <p></p>
+            </div>
+            <div class="key-container">
+                <p id="locationDisplay"></p>
+                <br>
+                <p>event.location</p>
+                <br>
+                <p>Some keys exist more than once on your keyboard.</p>
+                <p>This provides the location of the key pressed.</p>
+                <p>Try it with both shifts.</p>
+                <p>1 = left & 2 = right</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
